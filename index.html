@@ -1,0 +1,2595 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HQZE3LED87"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-HQZE3LED87');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" as="image" href="images/hero.jpg">
+  <title>れお｜SNS×高単価アフィリエイトで月300万円を実現した経理マンの話</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #d4e8f5;
+      font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+      font-size: 14px;
+      color: #333;
+      line-height: 2.2;
+    }
+
+    .wrapper {
+      max-width: 480px;
+      margin: 0 auto;
+      background: #fff;
+    }
+
+    /* ===== PROFILE BAR ===== */
+    .profile-bar {
+      background: linear-gradient(135deg, #2a6fa8 0%, #1a4f7a 100%);
+      display: flex;
+      align-items: center;
+      padding: 10px 14px;
+      gap: 10px;
+    }
+
+    .profile-bar img {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      object-fit: cover;
+    }
+
+    .profile-bar .name {
+      color: #fff;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .profile-bar .stats {
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 11px;
+      margin-top: 2px;
+    }
+
+    /* ===== HERO ===== */
+    .hero-img {
+      margin-bottom: 0;
+    }
+
+    .hero-img img {
+      width: 100%;
+      display: block;
+      margin-bottom: 0;
+    }
+
+    .hero-placeholder {
+      width: 100%;
+      height: 220px;
+      background: #e8f4fd;
+      border: 2px dashed #90c0e0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #5a9cc5;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    /* ===== URGENCY BAR ===== */
+    .urgency-bar {
+      background: #e05a2b;
+      color: #fff;
+      text-align: center;
+      padding: 12px 16px;
+      font-size: 13px;
+      font-weight: bold;
+      line-height: 1.8;
+    }
+
+    /* ===== SECTION ===== */
+    .section {
+      padding: 36px 20px;
+      border-bottom: 8px solid #e8f4fd;
+    }
+
+    .section:last-of-type {
+      border-bottom: none;
+    }
+
+    /* ===== SPACERS ===== */
+    .sp {
+      height: 22px;
+    }
+
+    .sp-sm {
+      height: 12px;
+    }
+
+    .sp-lg {
+      height: 36px;
+    }
+
+    .sp-xl {
+      height: 50px;
+    }
+
+    /* ===== SECTION LABEL ===== */
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #e8f4fd;
+      border-left: 4px solid #2a6fa8;
+      padding: 14px 18px;
+      font-size: 17px;
+      font-weight: bold;
+      color: #1a4f7a;
+      border-radius: 0 6px 6px 0;
+    }
+
+    /* ===== LEAD TEXT ===== */
+    .lead-text {
+      font-size: 16px;
+      color: #1a4f7a;
+      font-weight: bold;
+      line-height: 2.8;
+      padding: 4px 2px;
+    }
+
+    .lead-text span {
+      display: block;
+    }
+
+    .lead-text .quote {
+      color: #2a6fa8;
+    }
+
+    /* ===== BODY TEXT ===== */
+    .body-text {
+      font-size: 14.5px;
+      color: #333;
+      line-height: 2.6;
+    }
+
+    .body-text p {
+      margin-bottom: 30px;
+    }
+
+    .body-text p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ===== CHAT BUBBLES ===== */
+    .chat-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .chat-item .avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .chat-bubble {
+      background: #ddeeff;
+      border-radius: 0 14px 14px 14px;
+      padding: 13px 15px;
+      font-size: 13.5px;
+      line-height: 2.0;
+      color: #333;
+      max-width: calc(100% - 52px);
+      position: relative;
+    }
+
+    .chat-bubble::before {
+      content: '';
+      position: absolute;
+      left: -8px;
+      top: 13px;
+      border: 5px solid transparent;
+      border-right-color: #ddeeff;
+    }
+
+    /* ===== QUOTE BLOCK ===== */
+    .quote-block {
+      border-left: 3px solid #2a6fa8;
+      background: #f5faff;
+      padding: 18px 18px 18px 20px;
+      border-radius: 0 8px 8px 0;
+      font-size: 13.5px;
+      line-height: 2.2;
+      color: #444;
+      margin-bottom: 14px;
+    }
+
+    .quote-block:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ===== CALLOUT ===== */
+    .callout {
+      background: #f0f8ff;
+      border: 1px solid #b8d8f0;
+      border-radius: 10px;
+      padding: 22px 20px;
+      font-size: 14px;
+      line-height: 2.2;
+      color: #333;
+    }
+
+    .callout.orange {
+      background: #fff8f0;
+      border-color: #f0c080;
+    }
+
+    .callout.green {
+      background: #f0fff4;
+      border-color: #80d0a0;
+    }
+
+    /* ===== STATS GRID ===== */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .stat-item {
+      background: linear-gradient(135deg, #e8f4fd, #d0e8f8);
+      border-radius: 10px;
+      text-align: center;
+      padding: 18px 8px;
+      border: 1px solid #b8d8f0;
+    }
+
+    .stat-item .num {
+      font-size: 22px;
+      font-weight: bold;
+      color: #1a4f7a;
+      line-height: 1.2;
+    }
+
+    .stat-item .unit {
+      font-size: 11px;
+      color: #2a6fa8;
+      margin-top: 6px;
+      line-height: 1.6;
+    }
+
+    /* ===== IMAGE ===== */
+    .img-actual {
+      width: 100%;
+      border-radius: 10px;
+      display: block;
+      object-fit: cover;
+    }
+
+    .img-placeholder {
+      width: 100%;
+      background: #f0f8ff;
+      border: 2px dashed #90c0e0;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #5a9cc5;
+      font-size: 12px;
+      text-align: center;
+      padding: 24px;
+      gap: 8px;
+    }
+
+    .img-placeholder .icon {
+      font-size: 30px;
+    }
+
+    .img-caption {
+      text-align: center;
+      font-size: 11.5px;
+      color: #888;
+      margin-top: 8px;
+      line-height: 1.8;
+    }
+
+    /* ===== TRANSFER GRID ===== */
+    .transfer-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .transfer-grid img {
+      width: 100%;
+      border-radius: 8px;
+      display: block;
+    }
+
+    /* ===== CHECKLIST ===== */
+    .checklist {
+      list-style: none;
+      padding: 0;
+    }
+
+    .checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 13.5px;
+      line-height: 2.0;
+      padding: 12px 0;
+      border-bottom: 1px solid #e8f0f8;
+      color: #333;
+    }
+
+    .checklist li:last-child {
+      border-bottom: none;
+    }
+
+    .checklist li::before {
+      content: '✓';
+      color: #2a6fa8;
+      font-weight: bold;
+      font-size: 14px;
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    /* ===== VOICE CARDS ===== */
+    .voice-card {
+      background: #f5faff;
+      border: 1px solid #c0d8f0;
+      border-radius: 12px;
+      padding: 20px 18px;
+      margin-bottom: 14px;
+    }
+
+    .voice-card .tag {
+      display: inline-block;
+      background: #2a6fa8;
+      color: #fff;
+      font-size: 11px;
+      padding: 3px 12px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .voice-card .result {
+      font-size: 17px;
+      font-weight: bold;
+      color: #1a4f7a;
+      line-height: 1.6;
+      margin-bottom: 8px;
+    }
+
+    .voice-card .detail {
+      font-size: 12.5px;
+      color: #555;
+      line-height: 1.9;
+    }
+
+    .voice-card .detail::before {
+      content: '→ ';
+      color: #e05a2b;
+      font-weight: bold;
+    }
+
+    /* ===== EMPHASIS BOX ===== */
+    .emph-box {
+      background: #e8f4fd;
+      border-radius: 10px;
+      padding: 24px 20px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      color: #1a4f7a;
+      line-height: 2.4;
+    }
+
+    /* ===== TIMELINE ===== */
+    .timeline-wrap {
+      background: #f5faff;
+      border-radius: 10px;
+      padding: 20px 18px;
+      border: 1px solid #c0d8f0;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 22px;
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: 7px;
+      top: 8px;
+      bottom: -22px;
+      width: 2px;
+      background: #b8d8f0;
+    }
+
+    .timeline-item:last-child::before {
+      display: none;
+    }
+
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      left: 2px;
+      top: 6px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #2a6fa8;
+      border: 2px solid #fff;
+    }
+
+    .timeline-item .tl-label {
+      font-size: 11px;
+      color: #2a6fa8;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .timeline-item .tl-text {
+      font-size: 13.5px;
+      line-height: 2.0;
+      color: #333;
+    }
+
+    /* ===== COMPARE TABLE ===== */
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12.5px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .compare-table th {
+      padding: 12px 8px;
+      text-align: center;
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 1.6;
+    }
+
+    .compare-table th:first-child {
+      background: #f0f0f0;
+      color: #666;
+    }
+
+    .compare-table th:nth-child(2) {
+      background: #f8d0c0;
+      color: #c04020;
+    }
+
+    .compare-table th:nth-child(3) {
+      background: #2a6fa8;
+      color: #fff;
+    }
+
+    .compare-table td {
+      padding: 12px 8px;
+      text-align: center;
+      border-bottom: 1px solid #e8e8e8;
+      line-height: 1.8;
+    }
+
+    .compare-table td:first-child {
+      background: #f8f8f8;
+      color: #666;
+      font-size: 11.5px;
+    }
+
+    .compare-table td:nth-child(2) {
+      background: #fff8f5;
+      color: #c04020;
+    }
+
+    .compare-table td:nth-child(3) {
+      background: #f0f8ff;
+      color: #1a4f7a;
+      font-weight: bold;
+    }
+
+    /* ===== FLOW STEPS ===== */
+    .flow-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 18px 0;
+      border-bottom: 1px dashed #d0e4f0;
+    }
+
+    .flow-step:last-child {
+      border-bottom: none;
+    }
+
+    .flow-step .num {
+      width: 32px;
+      height: 32px;
+      background: #2a6fa8;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+
+    .flow-step .text {
+      font-size: 13.5px;
+      line-height: 2.0;
+      color: #333;
+      padding-top: 5px;
+    }
+
+    .flow-step .text strong {
+      color: #1a4f7a;
+      font-size: 14px;
+    }
+
+    /* ===== HIGHLIGHT ===== */
+    .hl-red {
+      color: #e05a2b;
+      font-weight: bold;
+    }
+
+    .hl-blue {
+      color: #1a4f7a;
+      font-weight: bold;
+    }
+
+    /* ===== BONUS SECTION ===== */
+    .bonus-header {
+      background: linear-gradient(135deg, #1a4f7a, #2a6fa8);
+      color: #fff;
+      text-align: center;
+      padding: 28px 20px;
+      border-radius: 12px 12px 0 0;
+    }
+
+    .bonus-header .title {
+      font-size: 19px;
+      font-weight: bold;
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+
+    .bonus-header .subtitle {
+      font-size: 12.5px;
+      opacity: 0.88;
+      line-height: 2.0;
+    }
+
+    .bonus-header .price-tag {
+      background: #e05a2b;
+      display: inline-block;
+      padding: 7px 22px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-top: 14px;
+    }
+
+    .bonus-card {
+      border: 1px solid #d0e4f0;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 18px;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(42, 111, 168, 0.08);
+    }
+
+    .bonus-card img {
+      width: 100%;
+      display: block;
+    }
+
+    .bonus-card .bonus-info {
+      padding: 14px 16px 18px;
+    }
+
+    .bonus-card .bonus-num {
+      font-size: 11px;
+      color: #2a6fa8;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .bonus-card .bonus-title {
+      font-size: 14.5px;
+      font-weight: bold;
+      color: #1a4f7a;
+      line-height: 1.6;
+      margin-bottom: 7px;
+    }
+
+    .bonus-card .bonus-desc {
+      font-size: 12.5px;
+      color: #555;
+      line-height: 2.0;
+    }
+
+    /* ===== PRICE BOX ===== */
+    .price-box {
+      background: linear-gradient(135deg, #fff8f0, #fff0e0);
+      border: 2px solid #e05a2b;
+      border-radius: 12px;
+      text-align: center;
+      padding: 26px 20px;
+    }
+
+    .price-box .original {
+      font-size: 13px;
+      color: #999;
+      text-decoration: line-through;
+      margin-bottom: 8px;
+    }
+
+    .price-box .free {
+      font-size: 30px;
+      font-weight: bold;
+      color: #e05a2b;
+      line-height: 1.2;
+    }
+
+    .price-box .note {
+      font-size: 12px;
+      color: #666;
+      margin-top: 10px;
+      line-height: 2.0;
+    }
+
+    /* ===== CTA BUTTON ===== */
+    .cta-btn {
+      display: block;
+      background: linear-gradient(135deg, #2ecc71, #27ae60);
+      color: #fff;
+      text-align: center;
+      padding: 20px 20px;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      line-height: 1.5;
+      box-shadow: 0 4px 16px rgba(39, 174, 96, 0.35);
+      border: 2px dashed rgba(255, 255, 255, 0.5);
+      animation: pulse-button 2s infinite;
+    }
+
+    @keyframes pulse-button {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.05);
+        /* slightly larger */
+      }
+
+      100% {
+        transform: scale(1);
+        /* back to normal */
+      }
+    }
+
+    .cta-btn .sub {
+      font-size: 12px;
+      opacity: 0.9;
+      display: block;
+      margin-top: 5px;
+      font-weight: normal;
+    }
+
+    .cta-note {
+      text-align: center;
+      font-size: 11.5px;
+      color: #888;
+      margin-top: 10px;
+      line-height: 1.9;
+    }
+
+    /* ===== DEADLINE BOX ===== */
+    .deadline-box {
+      background: #e05a2b;
+      color: #fff;
+      border-radius: 10px;
+      text-align: center;
+      padding: 16px 18px;
+      font-size: 13px;
+      font-weight: bold;
+      line-height: 2.0;
+    }
+
+    /* ===== SUPPORT BOX ===== */
+    .support-box {
+      background: #f5faff;
+      border: 1px solid #b8d8f0;
+      border-radius: 12px;
+      padding: 22px 20px;
+    }
+
+    .support-box ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .support-box ul li {
+      font-size: 13.5px;
+      line-height: 2.0;
+      color: #333;
+      padding: 10px 0;
+      border-bottom: 1px solid #e8f0f8;
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+    }
+
+    .support-box ul li:last-child {
+      border-bottom: none;
+    }
+
+    .support-box ul li::before {
+      content: '▶';
+      color: #2a6fa8;
+      font-size: 10px;
+      margin-top: 6px;
+      flex-shrink: 0;
+    }
+
+    /* ===== CLOSING BOX ===== */
+    .closing-box {
+      background: linear-gradient(135deg, #f0f8ff, #e8f4fd);
+      border-radius: 12px;
+      padding: 28px 22px;
+      font-size: 14px;
+      line-height: 2.5;
+      color: #333;
+      border: 1px solid #c0d8f0;
+    }
+
+    .closing-box p {
+      margin-bottom: 22px;
+    }
+
+    .closing-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: linear-gradient(135deg, #1a4f7a, #2a6fa8);
+      color: rgba(255, 255, 255, 0.9);
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 12.5px;
+      line-height: 2.1;
+    }
+
+    .footer .name {
+      font-size: 19px;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    /* ===== STICKY CTA ===== */
+    .sticky-cta {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 480px;
+      padding: 10px 16px 14px;
+      background: rgba(255, 255, 255, 0.97);
+      border-top: 1px solid #d0e4f0;
+      z-index: 999;
+      box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .bottom-pad {
+      height: 80px;
+    }
+
+    /* ===== COUNTDOWN TIMER ===== */
+    .countdown-wrapper {
+      background: #fff5f5;
+      /* matches the image's light background */
+      border-radius: 8px;
+      padding: 30px 10px;
+      text-align: center;
+      margin: 15px 0 30px 0;
+    }
+
+    .timer-msg {
+      color: #e05a2b;
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .timer-display {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 15px;
+    }
+
+    .time-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .time-circle {
+      width: 75px;
+      height: 75px;
+      background-color: #df583b;
+      /* orange */
+      border: 3px solid #cb4828;
+      /* darker orange border */
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 36px;
+      font-weight: normal;
+      font-family: Arial, Helvetica, sans-serif;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .time-label {
+      font-size: 16px;
+      color: #555;
+      font-weight: bold;
+      font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
+    }
+
+    .timer-expired-msg {
+      color: #df583b;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+
+
+
+    <!-- HERO IMAGE -->
+    <div class="hero-img">
+      <img src="images/hero.jpg" alt="れおのセールスレターサムネイル" fetchpriority="high" loading="eager"
+        onerror="this.parentElement.innerHTML='<div class=\'hero-placeholder\'>📸 ヘッダー画像</div>'">
+    </div>
+
+    <!-- ========================================
+       SECTION 1: LEAD
+       ======================================== -->
+    <div class="section">
+
+      <div class="lead-text">
+        <span>会社のお給料とは別で</span>
+        <span>月10万でも20万でも、</span>
+        <span class="quote">「収入の柱」があれば</span>
+        <span>もっと人生楽しくなるのにな…</span>
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="chat-item">
+        <img src="images/れおアイコン.jpg" alt="れお" class="avatar">
+        <div class="chat-bubble">
+          旅行に行くときも<br>
+          値段を気にせず計画したい。
+        </div>
+      </div>
+
+      <div class="chat-item">
+        <img src="images/れおアイコン.jpg" alt="れお" class="avatar">
+        <div class="chat-bubble">
+          妻と行きたいレストランに<br>
+          ためらわずに入れるようになりたい。
+        </div>
+      </div>
+
+      <div class="chat-item">
+        <img src="images/れおアイコン.jpg" alt="れお" class="avatar">
+        <div class="chat-bubble">
+          転勤があっても、<br>
+          会社に振り回されない選択肢を持っていたい。
+        </div>
+      </div>
+
+      <div class="chat-item">
+        <img src="images/れおアイコン.jpg" alt="れお" class="avatar">
+        <div class="chat-bubble">
+          いつかは会社を辞めても、<br>
+          生きていけるくらいの自分の力が欲しい。
+        </div>
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="body-text">
+        <p>
+          人生で一度はこのように<br>
+          思ったことありませんか？
+        </p>
+        <p>
+          実はこれ、会社員だった頃の<br>
+          <strong>当時の僕自身が感じていたこと</strong>です。
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- ========================================
+       SECTION 2: PAST PAIN
+       ======================================== -->
+    <div class="section">
+
+      <div class="section-label">
+        <span>💭</span> あの頃の僕が感じていたこと
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="quote-block">
+        「どれだけ頑張っても給料は上がらない。<br>
+        評価されているのかもわからない」
+      </div>
+
+      <div class="quote-block">
+        「転勤のたびに生活ごとリセットされる。<br>
+        自分の人生なのに、住む場所すら自分で決められない」
+      </div>
+
+      <div class="quote-block">
+        「平日は会社と家を往復するだけ。<br>
+        夜はNetflixかスマホゲームで時間を潰して寝る。<br>
+        それを繰り返す毎日」
+      </div>
+
+      <div class="sp"></div>
+
+      <img src="images/会社員れお.jpg" alt="満員電車" class="img-actual"
+        onerror="this.outerHTML='<div class=\'img-placeholder\' style=\'height:160px\'><span class=\'icon\'>🚃</span><span>満員電車の写真</span></div>'">
+
+      <div class="sp"></div>
+
+      <div class="body-text">
+        <p>
+          （正直、このまま一生が終わっていくのかと思うと、<br>
+          　怖くなることがあった）
+        </p>
+      </div>
+
+      <div class="sp-sm"></div>
+
+      <div class="chat-item">
+        <img src="images/れおアイコン.jpg" alt="れお" class="avatar">
+        <div class="chat-bubble">
+          「いつまでこんな生活が続くんだろう…」
+        </div>
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="body-text">
+        <p>
+          相談できる相手もいないし、<br>
+          誰かに言っても「それが普通だよ」と<br>
+          返ってくるだけだとわかっていたから、<br>
+          ずっとひとりで抱えていました。
+        </p>
+        <p>
+          でも、きっとこれって、<br>
+          <strong>僕だけじゃないですよね？</strong>
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- ========================================
+       SECTION 3: TRANSFORMATION
+       ======================================== -->
+    <div class="section">
+
+      <div class="body-text">
+        <p>
+          でも、そんな今では、<br>
+          これからお伝えする<br>
+          <strong>完全リモートワークでの副業を実践したことで、</strong><br>
+          僕の働き方と生活は一変しました。
+        </p>
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="section-label">
+        <span>📊</span> れおの実績
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="num">300万</div>
+          <div class="unit">最高月収<br>（円）</div>
+        </div>
+        <div class="stat-item">
+          <div class="num">完全</div>
+          <div class="unit">リモート<br>ワーク</div>
+        </div>
+        <div class="stat-item">
+          <div class="num">本業</div>
+          <div class="unit">継続しながら<br>達成</div>
+        </div>
+      </div>
+
+      <div class="sp-lg"></div>
+
+      <div class="emph-box">
+        手取り月収20万円、<br>
+        特別な才能もスキルも何もなかった<br>
+        普通の経理マンだった僕でも<br>
+        <br>
+        <span class="hl-red" style="font-size:25px;">月300万円を達成</span><br>
+        することができました。
+      </div>
+
+      <div class="sp-lg"></div>
+
+      <div class="body-text">
+        <p>
+          「絶対嘘だ！」<br>
+          「そんなことあり得ない」
+        </p>
+        <p>
+          という声が聞こえてきそうなので、<br>
+          実際の振込画面を見せたいと思います。<br>
+          しかもこれ、<strong>本業を続けながら</strong>実現できています。
+        </p>
+      </div>
+
+      <div class="sp"></div>
+
+      <!-- 振込実績 -->
+      <div class="transfer-grid">
+        <img src="images/振込画面216万.JPG" alt="振込実績216万"
+          onerror="this.outerHTML='<div class=\'img-placeholder\' style=\'height:140px\'><span class=\'icon\'>💰</span><span>振込画面<br>216万</span></div>'">
+        <img src="images/振込画面245万.JPG" alt="振込実績245万"
+          onerror="this.outerHTML='<div class=\'img-placeholder\' style=\'height:140px\'><span class=\'icon\'>💰</span><span>振込画面<br>245万</span></div>'">
+      </div>
+      <div class="img-caption">▲ 実際の振込実績（一部抜粋）</div>
+
+      <div class="sp-lg"></div>
+
+      <div class="body-text">
+        <p>
+          しかも<strong>完全リモートで</strong>実現できています。
+        </p>
+        <p>
+          会社に出社する必要は一切なく、<br>
+          上司に気を遣うこともない。<br>
+          人間関係のストレスもゼロ。<br>
+          本当に自分のペースで動ける生活になりました。
+        </p>
+        <p>
+          旅行好きだった妻と一緒に<br>
+          旅行の頻度が増えて、<br>
+          新婚旅行も以前では考えられないくらい贅沢にできた。
+        </p>
+        <p>
+          「これ、いくら？」と値段を気にしながら<br>
+          買い物をしていた感覚が、<br>
+          「欲しいものを欲しいと思ったときに買える」<br>
+          そんな感覚に変わっていきました。
+        </p>
+      </div>
+
+      <div class="sp"></div>
+
+      <img src="images/モルディブ2ショット.jpeg" alt="新婚旅行モルディブ" class="img-actual"
+        onerror="this.outerHTML='<div class=\'img-placeholder\' style=\'height:200px\'><span class=\'icon\'>🏝️</span><span>新婚旅行の写真<br>（モルディブ2ショット）</span></div>'">
+      <div class="img-caption">▲ 新婚旅行も、以前では考えられないくらい贅沢に！</div>
+
+      <div class="sp"></div>
+
+      <img src="images/マリーナベイサンズのスイートルーム.jpeg" alt="マリーナスイート" class="img-actual"
+        onerror="this.outerHTML='<div class=\'img-placeholder\' style=\'height:200px\'><span class=\'icon\'>🏨</span><span>マリーナスイートの写真</span></div>'">
+      <div class="img-caption">▲ マリーナベイサンズのスイートルームにも泊まれるようになりました！</div>
+
+      <div class="sp-lg"></div>
+
+      <div class="callout">
+        ここで勘違いしてほしくないのが、<br>
+        <strong>決して自慢したいわけではない</strong>ということ。<br>
+        <br>
+        会社のお給料とは別で収入の柱を持つことで、<br>
+        <strong>人生の選択肢が一気に増える</strong>ということ。<br>
+        <br>
+        これが伝われば嬉しいです。
+      </div>
+
+    </div>
+
+
+    <!-- ========================================
+       SECTION 4: VISION
+       ======================================== -->
+    <div class="section">
+
+      <div class="section-label">
+        <span>💡</span> もし収入の柱があったら？
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="lead-text">
+        <span>もしあなた自身も、</span>
+        <span>お給料とは別で月に</span>
+        <span class="quote">10万、20万、30万円でも</span>
+        <span>収入の柱があったとしたら、</span>
+        <span>何がしたいですか？</span>
+      </div>
+
+      <div class="sp"></div>
+
+      <ul class="checklist">
+        <li>会社の言いなりにならず、自分の意思で生き方を選びたい</li>
+        <li>転勤があっても「行かなくていい」と言える選択肢を持ちたい</li>
+        <li>パートナーや家族にお金の心配をさせたくない</li>
+        <li>欲しいものをためらわずに買えるようになりたい</li>
+        <li>好きな場所に住んで、好きな場所で働きたい</li>
+      </ul>
+
+      <div class="sp-lg"></div>
+
+      <div class="body-text">
+        <p>
+          今、頭の中でイメージしていること、<br>
+          <strong>全部叶いそうじゃないですか？</strong>
+        </p>
+        <p>
+          人生の選択肢が、一気に増えると<br>
+          思いませんか？
+        </p>
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="body-text">
+        <p>
+          でも一方で、こう思っている方も<br>
+          いるかもしれません。
+        </p>
+      </div>
+
+      <div class="sp-sm"></div>
+
+      <div class="chat-item">
+        <img src="images/れおアイコン.jpg" alt="れお" class="avatar">
+        <div class="chat-bubble">
+          「れおさんだからできたんでしょ？」
+        </div>
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="body-text">
+        <p>
+          決してそんなことはありません。<br>
+          これからお伝えする方法は、<br>
+          何も僕だけが成果を出せる<br>
+          専売特許ではないんです。
+        </p>
+        <p>
+          実際に僕がサポートして、<br>
+          成果を出している方をご紹介します。
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- ========================================
+       SECTION 5: TESTIMONIALS
+       ======================================== -->
+    <div class="section">
+
+      <div class="section-label">
+        <span>🏆</span> 実際に成果を出している方たち
+      </div>
+
+      <div class="voice-card">
+        <img src="images/実績者サムネイル/20代男性.png" alt="20代男性の実績" class="img-actual" style="margin-bottom:12px;">
+        <span class="tag">地方在住の会社員・20代後半</span>
+        <div class="result">通勤電車のスキマ時間で月28万円達成</div>
+        <div class="detail">奨学金の繰り上げ返済ができ、心と生活にゆとりが生まれた</div>
+      </div>
+
+      <div class="voice-card">
+        <img src="images/実績者サムネイル/30代女性.png" alt="30代女性の実績" class="img-actual" style="margin-bottom:12px;">
+        <span class="tag">育休中のママ・30代</span>
+        <div class="result">子供のお昼寝中だけの作業で月42万円達成</div>
+        <div class="detail">「保育園に入れなきゃ」という焦りが消え、自分のペースで働けるようになった</div>
+      </div>
+
+      <div class="voice-card">
+        <img src="images/実績者サムネイル/40代男性.png" alt="40代男性の実績" class="img-actual" style="margin-bottom:12px;">
+        <span class="tag">フルタイム勤務・40代男性</span>
+        <div class="result">残業続きの毎日から月25万円達成</div>
+        <div class="detail">会社の評価に依存しなくなり、いつでも辞められるという最強の安心感を手に入れた</div>
+      </div>
+
+      <div class="voice-card">
+        <img src="images/実績者サムネイル/50代女性.png" alt="50代女性の実績" class="img-actual" style="margin-bottom:12px;">
+        <span class="tag">パソコンが苦手な主婦・50代</span>
+        <div class="result">ゼロからスマホ1台で月18万円達成</div>
+        <div class="detail">値段を見ずにスーパーで買い物ができるようになり、趣味の旅行も楽しめるようになった</div>
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="body-text">
+        <p>
+          本当にたくさんの方が<br>
+          成果を出してくれています。
+        </p>
+        <p>
+          しかも<strong>ほぼ全員が未経験者</strong>です。
+        </p>
+        <p>
+          重要なのでもう一度言わせてください。
+        </p>
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="emph-box">
+        <span class="hl-red" style="font-size:17px;">ほぼ全員が、未経験なんです。</span>
+      </div>
+
+    </div>
+
+
+    <!-- ========================================
+       SECTION 6: WHY
+       ======================================== -->
+    <div class="section">
+
+      <div class="section-label">
+        <span>🔑</span> なぜ未経験でも成果が出るのか？
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="body-text">
+        <p>
+          じゃあなぜ、僕がサポートしている方は<br>
+          全くの経験ゼロからこれだけの成果を<br>
+          出すことができていると思いますか？
+        </p>
+        <p>
+          答えはシンプルです。
+        </p>
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="emph-box">
+        「<span class="hl-blue" style="font-size:17px;">役割分担を明確にしているから。</span>」<br>
+        <br>
+        これだけなんです。
+      </div>
+
+      <div class="sp-lg"></div>
+
+      <div class="body-text">
+        <p>
+          「え？どういうこと？」と<br>
+          思いましたよね？
+        </p>
+        <p>
+          ビジネスで収益を上げるためには、<br>
+          大きく分けて3つの要素が必要です。
+        </p>
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="flow-step">
+        <div class="num">1</div>
+        <div class="text">
+          <strong>商品作成</strong><br>
+          売れる商品やサービスをゼロから作る
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="num">2</div>
+        <div class="text">
+          <strong>販売・決済</strong><br>
+          セールスを行い、お金をいただく仕組みを作る
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="num">3</div>
+        <div class="text">
+          <strong>集客（SNS運用）</strong><br>
+          商品に興味のある見込み客を集める
+        </div>
+      </div>
+
+      <div class="sp-lg"></div>
+
+      <img src="images/role_division_diagram.png" alt="役割分担の仕組み図解" class="img-actual"
+        style="border-radius:12px;box-shadow:0 4px 16px rgba(58,143,212,0.15);"
+        onerror="this.outerHTML='<div class=\'img-placeholder\' style=\'height:200px\'><span class=\'icon\'>📊</span><span>役割分担の図解</span></div>'">
+
+      <div class="sp-lg"></div>
+
+      <div class="body-text">
+        <p>
+          ほとんどの初心者が挫折する原因は、<br>
+          この<strong>「1〜3をすべて1人でやろうとするから」</strong>です。
+        </p>
+        <p>
+          ですが、僕がお伝えしている手法では、<br>
+          もっとも難易度の高い「①商品作成」と「②販売」を<br>
+          すでに実績のある企業に完全に任せます。
+        </p>
+      </div>
+
+      <div class="sp-lg"></div>
+
+      <div class="callout green">
+        だからこそ、あなたは<br>
+        <strong>「③集客（SNSアカウントの運用）」だけに<br>
+        フルコミットできる。</strong><br>
+        <br>
+        これが、未経験からでも限界まで無駄を省き、<br>
+        <strong>最速で成果を出すことができる<br>
+        最強の仕組み（役割分担）なのです。</strong>
+      </div>
+
+      <div class="sp-lg"></div>
+
+      <div class="body-text">
+        <p>
+          「なるほど、じゃあ自分は集客（SNS発信）だけをやればいいんだな」<br>
+          と思っていただけたと思います。
+        </p>
+        <p>
+          ただ、僕自身も最初からこの「役割分担の必勝法」に<br>
+          気づいていたわけではありません。
+        </p>
+      </div>
+
+      <div class="sp-lg"></div>
+
+      <div class="callout orange">
+        本題に入る前に、一つだけお伝えしたいことがあります。<br>
+        <br>
+        <strong>この特典のゴールは</strong><br>
+        「参考になった」「勉強になった」で<br>
+        終わることではありません。<br>
+        <br>
+        あなたに実際に動いてもらって、<br>
+        収益という「数字」を出してもらうこと。<br>
+        <br>
+        そのために必要な情報を、<br>
+        <strong>すべて詰め込みました。</strong>
+      </div>
+
+    </div>
+
+
+    <!-- ========================================
+       SECTION 7: REO'S STORY
+       ======================================== -->
+    <div class="section">
+
+      <div class="section-label">
+        <span>📖</span> ここで少しだけ、僕の話を…
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="body-text">
+        <p>
+          上場企業の経理として8年間、正社員で働いていました。<br>
+          月収25万円、手取り20万円。<br>
+          「安定してるね」と言われるような立場でした。
+        </p>
+        <p>
+          でも5年間で<strong>3回の転勤</strong>を経験して、<br>
+          心のどこかではずっとこう思っていました。
+        </p>
+      </div>
+
+      <div class="sp-sm"></div>
+
+      <div class="chat-item">
+        <img src="images/れおアイコン.jpg" alt="れお" class="avatar">
+        <div class="chat-bubble">
+          「これって、本当に自分が選んだ人生なのか？」
+        </div>
+      </div>
+
+      <div class="sp-lg"></div>
+
+      <div class="timeline-wrap">
+        <div class="timeline-item">
+          <div class="tl-label">転勤①</div>
+          <div class="tl-text">実家 → 愛知へ</div>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-label">転勤②</div>
+          <div class="tl-text">愛知 → 群馬へ</div>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-label">転勤③</div>
+          <div class="tl-text">群馬 → 岐阜へ</div>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-label">繰り返し…</div>
+          <div class="tl-text">
+            辞令が出るたびに引越し。<br>
+            また人間関係を一から作って、<br>
+            また環境に慣れることから始める。
+          </div>
+        </div>
+      </div>
+
+      <div class="sp-lg"></div>
+
+      <div class="body-text">
+        <p>
+          そのたびに自分に言い聞かせていました。<br>
+          「転勤は出世のためだから仕方ない。<br>
+          これが普通だ」と。
+        </p>
+        <p>
+          でも本当は、<br>
+          <strong>会社に人生の主導権を握られていることが、</strong><br>
+          ずっとしんどかった。
+        </p>
+        <p>
+          そんな僕が副業に目覚めたのは、<br>
+          YouTubeでオリラジあっちゃんや<br>
+          両学長の動画を見たことがきっかけでした。
+        </p>
+        <p>
+          FIREや副業で人生を変えていく人たちの<br>
+          話を聞いて、<br>
+          「PCさえあれば場所を選ばず働けるんだ」<br>
+          と知ったとき、<br>
+          初めて「自分も変われるかもしれない」と<br>
+          思えたんです。
+        </p>
+        <p>
+          プログラミング、ブログ、WEBライティング。<br>
+          「とりあえずやってみよう」の精神で<br>
+          いろいろ試しました。<br>
+          でも、どれも長続きしませんでした。
+        </p>
+        <p>
+          そしてインスタに出会いました。<br>
+          妻と毎週お出かけしていたので、<br>
+          「その動画を発信すれば一石二鳥になる」<br>
+          という軽いノリで<br>
+          旅行アカウントを始めました。
+        </p>
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="callout" style="text-align:center;">
+        でも、自己流でやり続けた<br>
+        半年間の結果は、<br>
+        <br>
+        <span class="hl-red" style="font-size:30px;font-weight:bold;">収益ゼロ。</span>
+      </div>
+
+      <div class="sp-lg"></div>
+
+      <img src="images/挫折.jpg" alt="挫折" class="img-actual"
+        onerror="this.outerHTML='<div class=\'img-placeholder\' style=\'height:180px\'><span class=\'icon\'>😔</span><span>挫折のイメージ写真</span></div>'">
+
+      <div class="sp-lg"></div>
+
+      <div class="body-text">
+        <p>
+          同じ時期にインスタを始めた友人が<br>
+          先に成果を出したとき、<br>
+          夜ひとりで悔しくて泣きました。<br>
+          「自分は何をやってもダメなのか」と<br>
+          本気で思いました。
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- ========================================
+       SECTION 8: TURNING POINT
+       ======================================== -->
+    <div class="section">
+
+      <div class="section-label">
+        <span>⚡</span> そこで、ある決断をしました
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="body-text">
+        <p>
+          「無料の情報だけでなんとかなる」という<br>
+          思い込みを捨てて、<br>
+          <strong>SNS運用に特化したコミュニティへ<br>
+            自己投資をしたんです。</strong>
+        </p>
+        <p>
+          コミュニティでは、<br>
+        </p>
+        <ul class="checklist">
+          <li>アルゴリズムに評価されるショート動画の作り方</li>
+          <li>フォロワーを増やすためのプロフィール設計</li>
+          <li>バズるコンテンツの型</li>
+          <li>継続するための仕組みなど</li>
+        </ul>
+        <p>
+          それまで自己流でやっていたこととは<br>
+          真逆のことを教わりました。
+        </p>
+      </div>
+
+      <div class="sp-sm"></div>
+
+      <div class="chat-item">
+        <img src="images/れおアイコン.jpg" alt="れお" class="avatar">
+        <div class="chat-bubble">
+          「半年間、完全に間違った方向に<br>
+          全力で走っていたんだ」<br>
+          と気づいたのはこのときです。
+        </div>
+      </div>
+
+      <div class="sp-lg"></div>
+
+      <div class="body-text">
+        <p>
+          実際に成果も出ました。<br>
+          旅行アカウントのフォロワーは<br>
+          <strong>5.3万人まで伸びました。</strong><br>
+          数字がついてきて、<br>
+          「やっとわかってきた」という<br>
+          感覚もありました。
+        </p>
+        <p>
+          でも、ここが大事なところなんですが、<br>
+          フォロワーが増えても、<br>
+          <strong>本業の給料を超えるような収入には、<br>
+            なかなか辿り着けなかったんです。</strong>
+        </p>
+        <p>
+          フォロワーが増えているのに、<br>
+          お金は思ったように増えていない。<br>
+          「おかしいな」とずっと感じていました。
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- ========================================
+       SECTION 9: UNCOMFORTABLE TRUTH
+       ======================================== -->
+    <div class="section">
+
+      <div class="section-label">
+        <span>⚠️</span> SNS集客の「不都合な真実」
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="body-text">
+        <p>
+          ここで、SNSで副業をしている人の間では<br>
+          あまり語られない<br>
+          「<strong>不都合な真実</strong>」をお伝えします。
+        </p>
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="callout orange">
+        フォロワーが<strong>10万人いても、収入がゼロ</strong>の人がいます。<br>
+        <br>
+        一方で、フォロワーが<strong>5,000人しかいないのに、<br>
+          月に100万円を達成</strong>している人もいます。<br>
+        <br>
+        この差は、いったい何なのか。
+      </div>
+
+      <div class="sp-lg"></div>
+
+      <div class="body-text">
+        <p>
+          答えは一点だけです。
+        </p>
+      </div>
+
+      <div class="sp-sm"></div>
+
+      <div class="emph-box">
+        「<span class="hl-blue" style="font-size:17px;">収入の仕組みをうまく作れているか</span>」<br>
+        <br>
+        この差だけです。
+      </div>
+
+      <div class="sp-lg"></div>
+
+      <div class="body-text">
+        <p>
+          どれだけファンが集まっても、<br>
+          マネタイズの仕組みと設計ができていないと<br>
+          収益化できないアカウントが、<br>
+          世の中には本当に溢れています。
+        </p>
+        <p>
+          コミュニティでフォロワーの増やし方は学べた。<br>
+          でも「それをどうやって収入に変えるか」という<br>
+          マネタイズの設計は、誰も教えてくれなかった。
+        </p>
+        <p>
+          <strong>フォロワーを増やすことと、<br>
+            お金を稼ぐことは、<br>
+            まったく別のスキルだったんです。</strong>
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- ========================================
+       SECTION 10: HIGH TICKET AFFILIATE
+       ======================================== -->
+    <div class="section">
+
+      <div class="section-label">
+        <span>💎</span> 月300万円を実現した本当の理由
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="body-text">
+        <p>
+          コミュニティでフォロワーを5万人以上に伸ばしながらも、<br>
+          本業を超える収入に辿り着けなかった僕が<br>
+          次に出会ったのが、<br>
+          <strong>「高単価アフィリエイト」</strong>という手法でした。
+        </p>
+        <p>
+          これが、月300万円を実現できた<br>
+          <strong>本当の理由</strong>です。
+        </p>
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="body-text">
+        <p>
+          「アフィリエイト」という言葉は<br>
+          聞いたことがあると思います。<br>
+          でも、多くの人がやっている低単価アフィリエイトと、<br>
+          僕が取り組んでいる高単価アフィリエイトは、<br>
+          <strong>まったく別物</strong>です。
+        </p>
+      </div>
+
+      <div class="sp-lg"></div>
+
+      <table class="compare-table">
+        <tr>
+          <th></th>
+          <th>低単価アフィリ<br>（楽天roomなど）</th>
+          <th>高単価アフィリ<br>（れおの手法）</th>
+        </tr>
+        <tr>
+          <td>1件の報酬</td>
+          <td>100円〜数百円</td>
+          <td>5万円〜</td>
+        </tr>
+        <tr>
+          <td>月10万円に<br>必要な成約数</td>
+          <td>1,000件以上</td>
+          <td>2件だけ</td>
+        </tr>
+        <tr>
+          <td>フォロワー数</td>
+          <td>多いほど有利</td>
+          <td>500人でも可</td>
+        </tr>
+        <tr>
+          <td>時間効率</td>
+          <td>悪い</td>
+          <td>圧倒的に良い</td>
+        </tr>
+      </table>
+
+      <div class="sp-lg"></div>
+
+      <div class="body-text">
+        <p>
+          高単価アフィリエイトの仕組みを知った瞬間、<br>
+          「<strong>これだ</strong>」と思いました。<br>
+          フォロワーの数の問題じゃなかった。<br>
+          <strong>設計の問題だったんです。</strong>
+        </p>
+        <p>
+          高単価アフィリエイトの設計を<br>
+          アカウントに組み込んだ途端、<br>
+          それまで動かなかった収益が<br>
+          一気に動き始めました。
+        </p>
+        <p>
+          最初に数万円が入ったとき、<br>
+          「こんなに少ない成約数で、これだけ？」<br>
+          と驚きました。<br>
+          そしてじわじわと金額が上がっていき、<br>
+          本業の収入を超えた瞬間は<br>
+          「これ、現実なのか」と思った。<br>
+          ワクワクが止まらなかった。<br>
+          そして最終的に、<br>
+          <strong>最高月収300万円を達成しました。</strong>
+        </p>
+        <p>
+          自慢がしたいわけじゃないんです。<br>
+          ただ、「旅行アカウントを作ったら面白そう」という<br>
+          アイデアから始めただけの普通の経理マンでも、<br>
+          正しい設計を知ることでここまで変われた。<br>
+          それを伝えたい。
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- ========================================
+       SECTION 11: WHY SNS (THREADS & INSTAGRAM)?
+       ======================================== -->
+    <div class="section">
+
+      <div class="section-label">
+        <span>🚀</span> 副業を始めるならSNS発信が一択な理由
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="body-text">
+        <p>
+          副業を始めるにあたって、なぜSNS発信が良いのか。<br>
+          結論から言うと、<strong>初期費用がゼロで、<br>
+            圧倒的なスピードで認知を広げられるから</strong>です。
+        </p>
+        <p>
+          その中でも、今から参入するなら<br>
+          絶対に外せない2つのプラットフォームがあります。<br>
+          それが<strong>「Instagram（インスタ）」</strong>と<strong>「Threads（スレッズ）」</strong>です。
+        </p>
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="body-text">
+        <p>
+          <strong>① Instagram（インスタ）の強み</strong><br>
+          インスタグラムには、ショート動画（リール）と<br>
+          AIアルゴリズムが組み合わさった、<br>
+          <strong>初心者にとってとんでもない<br>
+            ボーナスタイムが到来しています。</strong>
+        </p>
+        <p>
+          AIがあなたの投稿を興味のある人のもとへ<br>
+          強制的に届けてくれるため、<br>
+          フォロワーが少なくても大きな集客力を持ちます。<br>
+          さらに、ユーザーの<strong>購買意欲が非常に高い</strong>のが特徴です。
+        </p>
+      </div>
+
+      <div class="sp-sm"></div>
+
+      <div class="body-text">
+        <p>
+          <strong>② Threads（スレッズ）の強み</strong><br>
+          テキスト主体のThreadsは、<br>
+          動画よりも作成のハードルが圧倒的に低く、<br>
+          日常の気づきや価値観を深く伝えるのに適しています。
+        </p>
+        <p>
+          文章を通じて読者と深いコミュニケーションが取れるため、<br>
+          ただのフォロワーを<strong>「熱狂的なファン」に<br>
+            育てる力（教育力）</strong>が他のSNS群を抜いています。
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- ========================================
+       SECTION 11.5: WHY NOT YOUTUBE OR TIKTOK?
+       ======================================== -->
+    <div class="section">
+
+      <div class="section-label">
+        <span>🤔</span> なぜYouTubeやTikTokではダメなのか？
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="body-text">
+        <p>
+          「動画ならYouTubeやTikTokでもいいのでは？」<br>
+          と思うかもしれません。<br>
+          しかし、限られた時間で成果を出したい副業において、<br>
+          これらはおすすめできません。
+        </p>
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="callout">
+        <strong>❌ YouTubeがおすすめできない理由</strong><br>
+        とにかく<strong>参入障壁と継続ハードルが高すぎます。</strong><br>
+        長尺動画の撮影、高度な動画編集、サムネイル作成など、<br>
+        初心者が1本の動画を作るのに何十時間もかかります。<br>
+        ほとんどの人が成果が出る前に挫折してしまうのが現実です。
+      </div>
+
+      <div class="sp-sm"></div>
+
+      <div class="callout">
+        <strong>❌ TikTokがおすすめできない理由</strong><br>
+        TikTokは圧倒的に拡散力がありますが、<br>
+        基本的には<strong>「動画を見て笑って終わり」の<br>
+          エンタメ消費型プラットフォーム</strong>です。<br>
+        ユーザー層も若年層が中心であり、<br>
+        「この人のようになりたい」「この商品をここで買いたい」という<br>
+        <strong>購買意欲（マネタイズのしやすさ）が著しく低い</strong>のが致命的です。
+      </div>
+
+    </div>
+
+
+    <!-- ========================================
+       SECTION 12: ROLE DIVISION (CONCLUSION)
+       ======================================== -->
+    <div class="section">
+
+      <div class="section-label">
+        <span>🎯</span> 【結論】インスタ×スレッズの両方運用が最適解
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="body-text">
+        <p>
+          ここまでお話してきた通り、最速で成果を出すには<br>
+          「商品・販売」を企業に任せ、<br>
+          自分は<strong>「集客」</strong>に徹する（役割分担）のが必須です。
+        </p>
+        <p>
+          では、その「集客」において、YouTubeの「編集カロリーの高さ」や<br>
+          TikTokの「購買意欲の低さ」という弱点を克服し、<br>
+          最も効率よく見込み客を集め、教育・ファン化するための最適解。
+        </p>
+        <p>
+          それが、<strong>InstagramとThreadsの<br>
+            「プラットフォームごとの役割分担（両方運用）」</strong>なのです。
+        </p>
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="flow-step">
+        <div class="num">1</div>
+        <div class="text">
+          <strong>Instagramでの「集客」</strong><br>
+          拡散力のあるリール動画で、新しい見込み客を大量に集める
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="num">2</div>
+        <div class="text">
+          <strong>Threadsでの「ファン化（教育）」</strong><br>
+          テキスト投稿で深く価値観を伝え、購買意欲の高いファンを育てる
+        </div>
+      </div>
+
+      <div class="sp-lg"></div>
+
+      <div class="callout green">
+        このようにプラットフォームの強みを組み合わせることで、<br>
+        「③集客（SNS運用）」の役割を完璧に果たすことができます。<br>
+        <br>
+        さらに、すでに実績のある企業に「①商品作成」「②販売」を任せる<br>
+        「高単価アフィリエイト」を活用する。<br>
+        <br>
+        これこそが、本業がありながらの限られた時間でも、<br>
+        <strong>限界まで無駄を省き、最速で成果を出すことができる<br>
+          唯一にして最強の仕組みなのです。</strong>
+      </div>
+
+    </div>
+
+
+    <!-- ========================================
+       SECTION 13: WORRIES
+       ======================================== -->
+    <div class="section">
+
+      <div class="section-label">
+        <span>😟</span> こんな不安はありませんか？
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="body-text">
+        <p>
+          「役割分担をして、<br>
+          自分は集客（アカウント運用）に特化すればいい」<br>
+          その仕組みはわかっていただけたと思います。
+        </p>
+        <p>
+          でも、いざ今日から始めようと思うと、<br>
+          こんな不安が出てきませんか？
+        </p>
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="chat-item">
+        <img src="images/れおアイコン.jpg" alt="れお" class="avatar">
+        <div class="chat-bubble">
+          「どんなジャンルで発信すればいいの？」
+        </div>
+      </div>
+
+      <div class="chat-item">
+        <img src="images/れおアイコン.jpg" alt="れお" class="avatar">
+        <div class="chat-bubble">
+          「リール動画の作り方なんて<br>
+          全くわからないし…」
+        </div>
+      </div>
+
+      <div class="chat-item">
+        <img src="images/れおアイコン.jpg" alt="れお" class="avatar">
+        <div class="chat-bubble">
+          「台本を書くセンスもない。<br>
+          顔出しもしなくちゃダメ？」
+        </div>
+      </div>
+
+      <div class="sp-lg"></div>
+
+      <div class="body-text">
+        <p>
+          その気持ち、痛いほどわかります。<br>
+          僕も最初は、何を発信すればいいかわからず、<br>
+          スマホの画面を何時間も睨みつけては、<br>
+          何も進まないまま1日が終わる…<br>
+          なんてことを繰り返していました。
+        </p>
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="callout green">
+        でも、<strong>安心してください。</strong><br>
+        <br>
+        あなたが集客（アカウント運用）に特化する上で、<br>
+        ゼロから自分で考えて悩む時間は<br>
+        <span class="hl-red">「1秒」も必要ありません。</span>
+      </div>
+
+      <div class="sp-lg"></div>
+
+      <div class="body-text">
+        <p>
+          なぜなら、今のインスタグラムには、<br>
+          すでに結果が出ている<br>
+          <strong>「正解の型」</strong>が存在するからです。
+        </p>
+      </div>
+
+      <div class="sp"></div>
+
+      <ul class="checklist">
+        <li>どうやればフォロワーがファンになるのかという「設計図」</li>
+        <li>思わず最後まで見てしまう「台本のテンプレート」</li>
+        <li>作業時間を8分の1に短縮する「AIの活用法」</li>
+        <li>初心者が選ぶべき「高単価案件のリスト」</li>
+      </ul>
+
+      <div class="sp-lg"></div>
+
+      <div class="body-text">
+        <p>
+          あなたがやるべきことは、<br>
+          天才的なアイデアをひらめくことではありません。
+        </p>
+        <p>
+          この「すでに結果が出ている型」に当てはめて、<br>
+          <strong>淡々と作業を進めることだけなんです。</strong>
+        </p>
+        <p>
+          これらを最初から知っていれば、<br>
+          僕のように半年間も無駄な努力をして<br>
+          悔し涙を流すことはありません。
+        </p>
+        <p>
+          会社員や主婦の方など、<br>
+          限られた時間しかない人ほど、<br>
+          この「型」を使うべきです。
+        </p>
+      </div>
+
+      <div class="sp-lg"></div>
+
+      <div class="body-text">
+        <p>
+          だからこそ、今回。
+        </p>
+        <p>
+          あなたが今日から一切迷うことなく<br>
+          「集客」にフルコミットして、<br>
+          最短で収益化の仕組みを作れるように。<br>
+          僕がこれまでに何百時間、何十万円と<br>
+          自己投資をして手に入れた「正解の型」を、<br>
+          <strong>すべてあなたにお渡しすることにしました。</strong>
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- ========================================
+       SECTION 14: BONUS
+       ======================================== -->
+    <div class="section" style="padding:0;border-bottom:8px solid #e8f4fd;">
+
+      <div class="bonus-header">
+        <div class="title" style="font-size:26px; line-height:1.5;">
+          🎁 10大特典を<br>
+          完全無料でプレゼント
+        </div>
+        <div class="subtitle">
+          フォロワーの増やし方から<br>
+          高単価アフィリエイトによる収益設計まで<br>
+          すべてをゼロから学べる内容を10個にまとめました
+        </div>
+        <div class="price-tag">通常29,800円相当 → 今だけ無料！</div>
+      </div>
+
+      <div style="padding:24px 20px;">
+
+        <div class="bonus-card">
+          <img src="images/bonus_banners/banner_01.png" alt="特典1"
+            onerror="this.outerHTML='<div class=\'img-placeholder\' style=\'height:120px\'><span class=\'icon\'>📦</span><span>特典バナー①</span></div>'">
+          <div class="bonus-info">
+            <div class="bonus-num">特典 01</div>
+            <div class="bonus-title">投稿作成GPTs</div>
+            <div class="bonus-desc">AIを活用して投稿作成の時間を大幅に短縮。初心者でも質の高いコンテンツが作れる</div>
+          </div>
+        </div>
+
+        <div class="bonus-card">
+          <img src="images/bonus_banners/banner_02.png" alt="特典2"
+            onerror="this.outerHTML='<div class=\'img-placeholder\' style=\'height:120px\'><span class=\'icon\'>📦</span><span>特典バナー②</span></div>'">
+          <div class="bonus-info">
+            <div class="bonus-num">特典 02</div>
+            <div class="bonus-title">教育投稿6選</div>
+            <div class="bonus-desc">フォロワーをファンに変える教育投稿の型を6パターン収録</div>
+          </div>
+        </div>
+
+        <div class="bonus-card">
+          <img src="images/bonus_banners/banner_03.png" alt="特典3"
+            onerror="this.outerHTML='<div class=\'img-placeholder\' style=\'height:120px\'><span class=\'icon\'>📦</span><span>特典バナー③</span></div>'">
+          <div class="bonus-info">
+            <div class="bonus-num">特典 03</div>
+            <div class="bonus-title">伸びない時のチェックリスト</div>
+            <div class="bonus-desc">フォロワーが増えない原因を即座に特定できるチェックリスト</div>
+          </div>
+        </div>
+
+        <div class="bonus-card">
+          <img src="images/bonus_banners/banner_04.png" alt="特典4"
+            onerror="this.outerHTML='<div class=\'img-placeholder\' style=\'height:120px\'><span class=\'icon\'>📦</span><span>特典バナー④</span></div>'">
+          <div class="bonus-info">
+            <div class="bonus-num">特典 04</div>
+            <div class="bonus-title">プロフィール設計シート</div>
+            <div class="bonus-desc">フォロワーが「フォローしたい」と思うプロフィールの作り方</div>
+          </div>
+        </div>
+
+        <div class="bonus-card">
+          <img src="images/bonus_banners/banner_05.png" alt="特典5"
+            onerror="this.outerHTML='<div class=\'img-placeholder\' style=\'height:120px\'><span class=\'icon\'>📦</span><span>特典バナー⑤</span></div>'">
+          <div class="bonus-info">
+            <div class="bonus-num">特典 05</div>
+            <div class="bonus-title">リサーチ＆投稿作成法</div>
+            <div class="bonus-desc">バズるネタを見つけて投稿に変換する具体的な手順</div>
+          </div>
+        </div>
+
+        <div class="bonus-card">
+          <img src="images/bonus_banners/banner_06.png" alt="特典6"
+            onerror="this.outerHTML='<div class=\'img-placeholder\' style=\'height:120px\'><span class=\'icon\'>📦</span><span>特典バナー⑥</span></div>'">
+          <div class="bonus-info">
+            <div class="bonus-num">特典 06</div>
+            <div class="bonus-title">冒頭フック集</div>
+            <div class="bonus-desc">最初の3秒で視聴者を引き込む冒頭フレーズ集</div>
+          </div>
+        </div>
+
+        <div class="bonus-card">
+          <img src="images/bonus_banners/banner_07.png" alt="特典7"
+            onerror="this.outerHTML='<div class=\'img-placeholder\' style=\'height:120px\'><span class=\'icon\'>📦</span><span>特典バナー⑦</span></div>'">
+          <div class="bonus-info">
+            <div class="bonus-num">特典 07</div>
+            <div class="bonus-title">バズる投稿ネタ4選</div>
+            <div class="bonus-desc">再現性の高いバズパターン4種類を完全解説</div>
+          </div>
+        </div>
+
+        <div class="bonus-card">
+          <img src="images/bonus_banners/banner_08.png" alt="特典8"
+            onerror="this.outerHTML='<div class=\'img-placeholder\' style=\'height:120px\'><span class=\'icon\'>📦</span><span>特典バナー⑧</span></div>'">
+          <div class="bonus-info">
+            <div class="bonus-num">特典 08</div>
+            <div class="bonus-title">アイコン作成方法</div>
+            <div class="bonus-desc">フォロワーに好印象を与えるアイコンの作り方</div>
+          </div>
+        </div>
+
+        <div class="bonus-card">
+          <img src="images/bonus_banners/banner_09.png" alt="特典9"
+            onerror="this.outerHTML='<div class=\'img-placeholder\' style=\'height:120px\'><span class=\'icon\'>📦</span><span>特典バナー⑨</span></div>'">
+          <div class="bonus-info">
+            <div class="bonus-num">特典 09</div>
+            <div class="bonus-title">Threads万能プロンプト100選</div>
+            <div class="bonus-desc">スレッズで使えるプロンプト100個を一挙公開</div>
+          </div>
+        </div>
+
+        <div class="bonus-card">
+          <img src="images/bonus_banners/banner_10.png" alt="特典10"
+            onerror="this.outerHTML='<div class=\'img-placeholder\' style=\'height:120px\'><span class=\'icon\'>📦</span><span>特典バナー⑩</span></div>'">
+          <div class="bonus-info">
+            <div class="bonus-num">特典 10</div>
+            <div class="bonus-title">ファン化フォーマット7選</div>
+            <div class="bonus-desc">フォロワーを熱狂的なファンに変える投稿フォーマット7種</div>
+          </div>
+        </div>
+
+        <div class="sp"></div>
+
+        <div class="price-box">
+          <div class="original">通常価格 29,800円</div>
+          <div class="free">今だけ完全無料</div>
+          <div class="note">
+            ⏰ 2日間限定の特別配布<br>
+            期限を過ぎると受け取れません
+          </div>
+        </div>
+
+        <!-- COUNTDOWN BONUS SECTION -->
+        <div class="countdown-wrapper countdown-container">
+          <div class="timer-display">
+            <div class="time-box">
+              <div class="time-circle days">00</div>
+              <div class="time-label">日</div>
+            </div>
+            <div class="time-box">
+              <div class="time-circle hours">00</div>
+              <div class="time-label">時間</div>
+            </div>
+            <div class="time-box">
+              <div class="time-circle mins">00</div>
+              <div class="time-label">分</div>
+            </div>
+            <div class="time-box">
+              <div class="time-circle secs">00</div>
+              <div class="time-label">秒</div>
+            </div>
+          </div>
+          <div class="timer-expired-msg" style="display:none;">
+            🎉 好評につき特別に延長中！<br><span style="font-size:13px; color:#555;">※予告なく終了する場合があります</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- ========================================
+       SECTION 15: SUPPORT + CTA
+       ======================================== -->
+    <div class="section">
+
+      <div class="section-label">
+        <span>🤝</span> 特典だけ渡して終わりではありません
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="callout">
+        特典だけ渡して終わりではなく<br>
+        <br>
+        <strong>あなたの収益化プランを作成する<br>
+          サポートとセットでお渡しいたします🙌</strong>
+      </div>
+
+      <div class="sp-lg"></div>
+
+      <img src="images/月30万ロードマップ作成会.png" alt="月収300万 副業サポート説明会" class="img-actual"
+        style="border-radius:12px;box-shadow:0 4px 16px rgba(58,143,212,0.25);"
+        onerror="this.outerHTML='<div class=\'img-placeholder\' style=\'height:180px\'><span class=\'icon\'>🤝</span><span>サポートサムネイル</span></div>'">
+
+      <div class="sp-lg"></div>
+
+      <div class="body-text">
+        <p>
+          ですが、一度に受けられる人数には<br>
+          限りがあります。
+        </p>
+        <p>
+          それに加えて、<br>
+          「とりあえずもらっておこう」ではなく<br>
+          <strong>「本気で変わりたい」</strong>と思っている方に<br>
+          受け取ってほしいと思っています。
+        </p>
+        <p>
+          そのため今回は、<br>
+          <strong>2日間という期限を設けました🙇</strong>
+        </p>
+        <p>
+          受け取り方は簡単です。<br>
+          LINEにて「サポート希望」と<br>
+          メッセージを送ってください。
+        </p>
+      </div>
+
+      <div class="sp-lg"></div>
+
+      <div class="section-label">
+        <span>✅</span> こんな方に受け取ってほしいです
+      </div>
+
+      <div class="sp"></div>
+
+      <ul class="checklist">
+        <li>会社の収入だけに頼らず、収入の柱を増やしたい</li>
+        <li>フォロワーを増やすだけでなく、しっかり収益化したい</li>
+        <li>少ない成約数で安定した収入を手にしたい</li>
+        <li>本気で現状を変えたいと思っている</li>
+        <li>正しい設計を学んで、最短で成果を出したい</li>
+      </ul>
+
+      <div class="sp-lg"></div>
+
+      <div class="deadline-box">
+        ⚠️ 2日間が過ぎると、特典は受け取れなくなります。<br>
+        次回の配布は完全に未定です。
+      </div>
+
+      <div class="sp-lg"></div>
+
+      <a href="https://utage-system.com/line/open/Llo6LnGmLlq8?mtid=unyz3hbrJcCI" class="cta-btn" onclick="gtag('event', 'tap_line_button_top');">
+        🎁 今すぐ無料で10大特典を受け取る
+      </a>
+      <div class="cta-note">※ 通常29,800円相当の内容が今だけ完全無料</div>
+
+      <!-- COUNTDOWN 1 -->
+      <div class="countdown-wrapper countdown-container">
+        <div class="timer-display">
+          <div class="time-box">
+            <div class="time-circle days">00</div>
+            <div class="time-label">日</div>
+          </div>
+          <div class="time-box">
+            <div class="time-circle hours">00</div>
+            <div class="time-label">時間</div>
+          </div>
+          <div class="time-box">
+            <div class="time-circle mins">00</div>
+            <div class="time-label">分</div>
+          </div>
+          <div class="time-box">
+            <div class="time-circle secs">00</div>
+            <div class="time-label">秒</div>
+          </div>
+        </div>
+        <div class="timer-expired-msg" style="display:none;">
+          🎉 好評につき特別に延長中！<br><span style="font-size:13px; color:#555;">※予告なく終了する場合があります</span>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- ========================================
+       SECTION 16: CLOSING
+       ======================================== -->
+    <div class="section">
+
+      <div class="section-label">
+        <span>✉️</span> 最後に、一つだけお伝えさせてください
+      </div>
+
+      <div class="sp"></div>
+
+      <div class="closing-box">
+        <p>
+          なぜ僕が、ここまで「早く行動してほしい」と<br>
+          口酸っぱくお伝えしているのか。
+        </p>
+        <p>
+          それは、過去の僕が<br>
+          「<strong>失ってから気づいたもの</strong>」があるからです。
+        </p>
+        <p>
+          経理マンとして働いていた頃、<br>
+          度重なる転勤の辞令が出るたび、<br>
+          僕は妻に頭を下げていました。<br>
+          愛知から群馬へ、そして岐阜へ。
+        </p>
+        <p>
+          住み慣れた街や友人とお別れし、<br>
+          段ボールに囲まれながら荷造りをする妻は、<br>
+          いつも「大丈夫だよ」と笑ってくれていました。<br>
+          でも、その笑顔の裏でどれだけ<br>
+          我慢をさせていたか、本当は気づいていました。
+        </p>
+        <p>
+          会社の都合で、大切な人の時間まで奪っている。<br>
+          自分の人生なのに、<br>
+          大切な家族の住む場所すら、守る選択ができない。<br>
+          その無力さに、当時の僕は胸が張り裂けそうでした。
+        </p>
+        <p>
+          お金は後からでも稼いで取り戻すことができます。<br>
+          でも、<br>
+          「一番体力があって思い切り楽しめる今の時期」や<br>
+          「大切な人と一緒に笑い合える今日という時間」は、<br>
+          いくらお金を払っても<br>
+          <strong>絶対に買い戻すことはできません。</strong>
+        </p>
+        <p>
+          いつか仕事が落ち着いたら旅行に行こう。<br>
+          いつかお金が貯まったら、<br>
+          値段を気にせず素敵なホテルに連れて行こう。
+        </p>
+        <p>
+          そうやって「いつか」を言い訳にして<br>
+          先延ばしにしていたら、<br>
+          気づいた時には本当にやりたいことが<br>
+          できなくなってしまうかもしれない。<br>
+          そう気づいた時、<br>
+          僕は心の底からゾッとしました。
+        </p>
+        <p>
+          僕自身、自己流でインスタを始めて、<br>
+          全く成果が出ずに夜ひとりで悔し涙を流した<br>
+          半年間がありました。<br>
+          今振り返ると、あの半年間を<br>
+          最初から正しい方法で進めていれば、<br>
+          妻ともっとたくさんの場所に旅行に行けたし、<br>
+          もっと早く不安のない生活を<br>
+          プレゼントできたのにと、深く後悔しています。
+        </p>
+        <p>
+          だからこそ、僕はあなたに<br>
+          「<strong>時間</strong>」を無駄にしてほしくないんです。
+        </p>
+        <p>
+          あなたが今から始める副業は、<br>
+          ただの「お金稼ぎ」ではありません。<br>
+          <strong>大切な人との時間を守り、<br>
+            もう誰にも我慢させないための手段です。</strong>
+        </p>
+        <p>
+          だからこそ、すでに結果が出ている<br>
+          「正解の型」を使って、無駄な失敗や遠回りを<br>
+          ショートカットしてください。<br>
+          それは決してズルではありません。<br>
+          あなたと、あなたの大切な人の<br>
+          「有限な時間」を守るための、<strong>最も誠実な選択です。</strong>
+        </p>
+      </div>
+
+      <div class="sp-lg"></div>
+
+      <div class="chat-item">
+        <img src="images/れおアイコン.jpg" alt="れお" class="avatar">
+        <div class="chat-bubble">
+          当時の自分に、そして本気で<br>
+          人生を変えたいと思っている<br>
+          あなたに伝えたいことはひとつです。<br>
+          <br>
+          「<strong>さっさと行動して、最低1年は継続しろ。</strong>」
+        </div>
+      </div>
+
+      <div class="sp-lg"></div>
+
+      <div class="body-text">
+        <p>
+          インスタで成果を出すこと、<br>
+          高単価アフィリエイトで収益を設計すること。
+        </p>
+        <p>
+          この2点においては最善のアドバイスができると<br>
+          自負しています。<br>
+          遠慮せず頼ってください。
+        </p>
+      </div>
+
+      <div class="sp-lg"></div>
+
+
+
+      <div class="sp-lg"></div>
+
+      <a href="https://utage-system.com/line/open/Llo6LnGmLlq8?mtid=unyz3hbrJcCI" class="cta-btn" onclick="gtag('event', 'tap_line_button_bottom');">
+        🎁 今すぐ無料で10大特典を受け取る
+      </a>
+      <div class="cta-note">※ 通常29,800円相当の内容が今だけ完全無料</div>
+
+      <!-- COUNTDOWN 2 -->
+      <div class="countdown-wrapper countdown-container">
+        <div class="timer-display">
+          <div class="time-box">
+            <div class="time-circle days">00</div>
+            <div class="time-label">日</div>
+          </div>
+          <div class="time-box">
+            <div class="time-circle hours">00</div>
+            <div class="time-label">時間</div>
+          </div>
+          <div class="time-box">
+            <div class="time-circle mins">00</div>
+            <div class="time-label">分</div>
+          </div>
+          <div class="time-box">
+            <div class="time-circle secs">00</div>
+            <div class="time-label">秒</div>
+          </div>
+        </div>
+        <div class="timer-expired-msg" style="display:none;">
+          🎉 好評につき特別に延長中！<br><span style="font-size:13px; color:#555;">※予告なく終了する場合があります</span>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const COUNTDOWN_HOURS = 48;
+      const MS_PER_HOUR = 60 * 60 * 1000;
+      const durationMs = COUNTDOWN_HOURS * MS_PER_HOUR;
+
+      // Check for existing start time in localStorage
+      let startTime = localStorage.getItem('timerStart_reo');
+      if (!startTime) {
+        startTime = Date.now();
+        localStorage.setItem('timerStart_reo', startTime);
+      }
+
+      const targetTime = parseInt(startTime) + durationMs;
+
+      function updateTimers() {
+        const now = Date.now();
+        const remaining = targetTime - now;
+
+        const containers = document.querySelectorAll('.countdown-container');
+
+        if (remaining <= 0) {
+          // Timer expired
+          containers.forEach(container => {
+            const msg = container.querySelector('.timer-msg');
+            if(msg) msg.style.display = 'none';
+            
+            const display = container.querySelector('.timer-display');
+            if(display) display.style.display = 'none';
+            
+            const expired = container.querySelector('.timer-expired-msg');
+            if(expired) expired.style.display = 'block';
+          });
+          clearInterval(timerInterval);
+          return;
+        }
+
+        // Calculate D, H, M, S
+        const dayMs = 24 * 60 * 60 * 1000;
+        const hourMs = 60 * 60 * 1000;
+        const minMs = 60 * 1000;
+        const secMs = 1000;
+
+        const d = Math.floor(remaining / dayMs);
+        const h = Math.floor((remaining % dayMs) / hourMs);
+        const m = Math.floor((remaining % hourMs) / minMs);
+        const s = Math.floor((remaining % minMs) / secMs);
+
+        // Format to strings
+        const dStr = d.toString();
+        const hStr = h.toString();
+        const mStr = m.toString();
+        const sStr = s.toString();
+
+        containers.forEach(container => {
+          if (container.querySelector('.days')) container.querySelector('.days').textContent = dStr;
+          if (container.querySelector('.hours')) container.querySelector('.hours').textContent = hStr;
+          if (container.querySelector('.mins')) container.querySelector('.mins').textContent = mStr;
+          if (container.querySelector('.secs')) container.querySelector('.secs').textContent = sStr;
+        });
+      }
+
+      // Update immediately, then every second
+      updateTimers();
+      const timerInterval = setInterval(updateTimers, 1000);
+    });
+  </script>
+</body>
+
+</html>
